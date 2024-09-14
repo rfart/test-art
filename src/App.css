@@ -1,38 +1,77 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-form input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.search-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-form button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flight-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flight-list li {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.flight-details {
+  margin: 20px auto;
+  padding: 20px;
+  width: 50%;
+  border: 1px solid #ccc;
+}
+
+.flight-list {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.flight-list h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.flight-list p {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #007bff;
 }
